@@ -33,6 +33,7 @@ namespace Cheers
                 //if statement for a/an condition
                 string giveMeA = "Give me a ";
                 string giveMeAn = "Give me an ";
+                //string anLetters = "halfnorsemix";
                 if (userNameArray[i] == 'a' || userNameArray[i] == 'e' || userNameArray[i] == 'f' || userNameArray[i] == 'h' || userNameArray[i] == 'i' || userNameArray[i] == 'l' || userNameArray[i] == 'm' || userNameArray[i] == 'n' || userNameArray[i] == 'o' || userNameArray[i] == 'r' || userNameArray[i] == 's' || userNameArray[i] == 'x')
                 {
                     Console.WriteLine(giveMeAn + userNameArray[i] + "...");
@@ -40,8 +41,7 @@ namespace Cheers
                 {
                     Console.WriteLine(giveMeA + userNameArray[i] + "...");
                 }
-               // Console.WriteLine("Give me a " + userNameArray[i] + "...");
-                //Console.ReadKey();
+
             }
             userName = userName.ToUpper();
             Console.WriteLine(userName + " is GREAT!!!");
