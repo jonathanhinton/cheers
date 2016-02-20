@@ -27,9 +27,10 @@ namespace Cheers
 
             for (int i = 0; i < userNameArray.Length; i++)
             {
+                //if statement for a/an condition
                 string giveMeA = "Give me a ";
                 string giveMeAn = "Give me an ";
-                if (userNameArray[i] == 'a' || userNameArray[i] == 'e' || userNameArray[i] == 'f' || userNameArray[i] == 'h' || userNameArray[i] == 'i' || userNameArray[i] == 'l' || userNameArray[i] == 'm' || userNameArray[i] == 'n' || userNameArray[i] == 'o' || userNameArray[i] == 'r' || userNameArray[i] == 's' || userNameArray[i] == 'x' || userNameArray[i] == 'y')
+                if (userNameArray[i] == 'a' || userNameArray[i] == 'e' || userNameArray[i] == 'f' || userNameArray[i] == 'h' || userNameArray[i] == 'i' || userNameArray[i] == 'l' || userNameArray[i] == 'm' || userNameArray[i] == 'n' || userNameArray[i] == 'o' || userNameArray[i] == 'r' || userNameArray[i] == 's' || userNameArray[i] == 'x' || userNameArray[i] == 'y' || userNameArray[i] == 'A' || userNameArray[i] == 'E' || userNameArray[i] == 'F' || userNameArray[i] == 'H' || userNameArray[i] == 'I' || userNameArray[i] == 'L' || userNameArray[i] == 'M' || userNameArray[i] == 'N' || userNameArray[i] == 'O' || userNameArray[i] == 'R' || userNameArray[i] == 'S' || userNameArray[i] == 'X' || userNameArray[i] == 'Y')
                 {
                     Console.WriteLine(giveMeAn + userNameArray[i] + "...");
                 } else
