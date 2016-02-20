@@ -17,6 +17,10 @@ namespace Cheers
             //display prompt for user input
             Console.WriteLine("What's your name?");
 
+            Console.WriteLine("When is your birthday? (mm/dd)");
+
+            userBirthDay = Console.ReadLine();
+
             //assign userName to the input typed into console
             userName = Console.ReadLine();
 
@@ -45,13 +49,6 @@ namespace Cheers
             }
             userName = userName.ToUpper();
             Console.WriteLine(userName + " is GREAT!!!");
-
-            //Part Deux
-            Console.WriteLine("When is your birthday? (mm/dd)");
-
-            userBirthDay = Console.ReadLine();
-
-            Console.WriteLine("You typed: " + userBirthDay);
 
             //keep console open until keypress
             Console.ReadKey();
