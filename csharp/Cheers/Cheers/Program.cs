@@ -24,7 +24,15 @@ namespace Cheers
 
             //create charArray from userName
             char[] userNameArray = userName.ToCharArray();
-            Console.WriteLine("Give me a " + userNameArray[0]);
+
+            int x = userNameArray.Length;
+
+            for (int i = 0; i < userNameArray.Length; i++)
+            {
+                Console.WriteLine("Give me a " + userNameArray[i] + "...");
+                Console.ReadKey();
+            }
+            Console.WriteLine(userName + " is GREAT!!!");
             //keep console open until keypress
             Console.ReadKey();
         }
