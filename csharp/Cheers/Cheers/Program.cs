@@ -12,6 +12,7 @@ namespace Cheers
         {
             //declare variable userName to be a string
             string userName;
+            string userBirthDay;
 
             //display prompt for user input
             Console.WriteLine("What's your name?");
@@ -41,6 +42,14 @@ namespace Cheers
                 //Console.ReadKey();
             }
             Console.WriteLine(userName + " is GREAT!!!");
+
+            //Part Deux
+            Console.WriteLine("When is your birthday? (mm/dd)");
+
+            userBirthDay = Console.ReadLine();
+
+            Console.WriteLine("You typed: " + userBirthDay);
+
             //keep console open until keypress
             Console.ReadKey();
         }
