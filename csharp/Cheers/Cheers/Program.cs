@@ -25,12 +25,19 @@ namespace Cheers
             //create charArray from userName
             char[] userNameArray = userName.ToCharArray();
 
-            int x = userNameArray.Length;
-
             for (int i = 0; i < userNameArray.Length; i++)
             {
-                Console.WriteLine("Give me a " + userNameArray[i] + "...");
-                Console.ReadKey();
+                string giveMeA = "Give me a ";
+                string giveMeAn = "Give me an ";
+                if (userNameArray[i] == 'a' || userNameArray[i] == 'e' || userNameArray[i] == 'f' || userNameArray[i] == 'h' || userNameArray[i] == 'i' || userNameArray[i] == 'l' || userNameArray[i] == 'm' || userNameArray[i] == 'n' || userNameArray[i] == 'o' || userNameArray[i] == 'r' || userNameArray[i] == 's' || userNameArray[i] == 'x' || userNameArray[i] == 'y')
+                {
+                    Console.WriteLine(giveMeAn + userNameArray[i] + "...");
+                } else
+                {
+                    Console.WriteLine(giveMeA + userNameArray[i] + "...");
+                }
+               // Console.WriteLine("Give me a " + userNameArray[i] + "...");
+                //Console.ReadKey();
             }
             Console.WriteLine(userName + " is GREAT!!!");
             //keep console open until keypress
