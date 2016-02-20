@@ -26,6 +26,7 @@ namespace Cheers
             //create charArray from userName
             char[] userNameArray = userName.ToCharArray();
 
+            //for loop to print userNameArray
             for (int i = 0; i < userNameArray.Length; i++)
             {
                 //if statement for a/an condition
