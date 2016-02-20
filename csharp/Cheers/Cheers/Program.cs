@@ -16,13 +16,15 @@ namespace Cheers
 
             //display prompt for user input
             Console.WriteLine("What's your name?");
+            
+            //assign userName to the input typed into console
+            userName = Console.ReadLine();
 
             Console.WriteLine("When is your birthday? (mm/dd)");
 
             userBirthDay = Console.ReadLine();
 
-            //assign userName to the input typed into console
-            userName = Console.ReadLine();
+
 
             //print userName to screen after successfull entry
             Console.WriteLine("Hello " + userName);
