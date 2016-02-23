@@ -51,7 +51,9 @@ namespace Cheers
             }
             userName = userName.ToUpper();
             Console.WriteLine(userName + " is GREAT!!!");
-
+            Console.WriteLine(DateTime.Now);
+            var parBirthday = DateTime.Parse(userBirthDay);
+            Console.WriteLine(parBirthday);
             //keep console open until keypress
             Console.ReadKey();
         }
