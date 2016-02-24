@@ -24,6 +24,9 @@ namespace Cheers
 
             userBirthDay = Console.ReadLine();
 
+            //convert user birthday to DateTime object
+            DateTime birthday = DateTime.Parse(userBirthDay);
+
 
 
             //print userName to screen after successfull entry
@@ -51,9 +54,23 @@ namespace Cheers
             }
             userName = userName.ToUpper();
             Console.WriteLine(userName + " is GREAT!!!");
-            Console.WriteLine(DateTime.Now);
-            var parBirthday = DateTime.Parse(userBirthDay);
-            Console.WriteLine(parBirthday);
+
+            //Logic for Birthday Calculation
+            DateTime today = DateTime.Today;
+            DateTime nextBirthday = new DateTime(today.Year, birthday.Month, birthday.Day);
+            if (nextBirthday < today)
+                nextBirthday = nextBirthday.AddYears(1);
+
+            int daysUntil = (nextBirthday - today).Days;
+
+            if ((birthday.Month + "/" + birthday.Day) == (today.Month + "/" + today.Day))
+            {
+                Console.WriteLine("Happy Birthday!!!");
+            } else
+            {
+                Console.WriteLine("Your birthday is " + daysUntil + " days away!");
+            }
+
             //keep console open until keypress
             Console.ReadKey();
         }
